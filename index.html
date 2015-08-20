@@ -6,31 +6,30 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<title>Home Page - Facta</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 </head>
 
 <body>
 	<!-- header -->
-	<div id="header">
-		<div class="header-top global-width">
-			<!-- logo -->
-			<div class="logo">
-				<a href="#">
-					<img src="images/logo.png" />
-				</a>
-			</div>
-			<!-- / logo -->
-			<!-- search -->
-			<div class="search">
-				<form class="search-form" method="post" action="#">
-					<input type="text" class="search-text" placeholder="ZOEKEN" />
-					<button type="submit">Search</button>
-				</form>
-			</div>
-			<!-- / search -->
+	<div id="header" class="global-width">
+		<!-- logo -->
+		<div class="logo">
+			<a href="#">
+				<img src="images/logo.png" />
+			</a>
 		</div>
+		<!-- / logo -->
+		<!-- search -->
+		<div class="search">
+			<form class="search-form" method="post" action="#">
+				<input type="text" class="search-text" placeholder="ZOEKEN" />
+				<button type="submit">Search</button>
+			</form>
+		</div>
+		<!-- / search -->
 		<!-- nav -->
-		<div class="nav global-width">
+		<div class="nav">
 			<ul>
 				<li><a href="#">OVER FACTA</a></li>
 				<li><a href="#">ACTIVITEITEN</a></li>
@@ -45,18 +44,18 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<!-- / header -->
 	<!-- middle -->
 	<div id="middle">
-		<div class="mid-pic global-width">
-			<span class="mask left">mask</span>
-			<span class="mask right">mask</span>
+		<div class="global-width">
+			<span class="mask left"></span>
+			<span class="mask right"></span>
 			<img class="pic" src="upload/pic.jpg" />
 		</div>
 	</div>
 	<!-- / middle -->
 	<!-- main -->
-	<div id="main">
-		<div class="main-mid global-width">
-			<span class="shadow left">shadow</span>
-			<span class="shadow right">shadow</span>
+	<div id="main" class="global-width">
+		<span class="shadow left"></span>
+		<span class="shadow right"></span>
+		<div class="main-mid clearfix">
 			<!-- back -->
 			<div class="back">U bevind zich hier<span>></span><a href="#">Home</a></div>
 			<!-- / back -->
@@ -95,7 +94,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<!-- / main -->
 	<!-- footer -->
 	<div id="footer">
-		<div class="footer-mid global-width">
+		<div class="global-width clearfix">
 			<div class="widget-box">
 				<h3 class="title">Producten</h3>
 				<ul>
