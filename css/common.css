@@ -14,7 +14,9 @@
 	width: 365px;
 	height: 67px;
 }
-
+.logo img{/*IE7*/
+	border:none;
+}
 /************************************ /logo************************************/
 
 
@@ -39,9 +41,11 @@
 }
 :-moz-placeholder  {
 	color: #fff;
+	opacity: 1
 }
 ::-moz-placeholder  {
 	color: #fff;
+	opacity: 1
 }
 :-ms-input-placeholder {
 	color: #fff;
@@ -54,8 +58,8 @@
 	border: 0;
 	background: url(images/search-button.png) 0 0 no-repeat;
 	text-indent:-9999px;
+	cursor:pointer;
 }
-
 /************************************ /search************************************/
 
 
@@ -73,6 +77,10 @@
 	height: 38px;
 	background: url(images/nav-par.png) right 0 no-repeat;
 }
+.nav li:hover,.nav .current,.nav .current a{
+	color: #1493cf !important;
+	background: url(images/nav-change.png);
+}
 .nav a {
 	display: block;
 	line-height: 38px;
@@ -81,7 +89,9 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
+.nav a:hover {
+	color: #1493cf;
+}
 /************************************** /nav**************************************/
 
 
@@ -131,24 +141,36 @@
 .main-mid {
 	padding:0 40px;
 }
-/****************************************back***************************************/
+/************************************breadcrumbs************************************/
 
-.back {
+.breadcrumbs {
+	height:40px;
 	line-height: 40px;
 	font-family: "HelveticaNeue";
 	font-weight: 400;
 	color: #b9babd;
 }
-.back span {
+.breadcrumbs span {
 	margin:0 9px;
 }
-.back a {
-	color: #000;
+.breadcrumbs li{
+	float:left;
+	list-style:none;
+}
+.breadcrumbs a {
+	color: #b9babd;
 	text-decoration: none;
 	text-transform: capitalize;
 }
+.breadcrumbs .current{
+	color:#000;
+	text-decoration: none;
+}
+.breadcrumbs a:hover {
+	text-decoration: underline;
+}
 
-/**************************************** /back***************************************/
+/*************************************** /breadcrumbs*************************************/
 
 
 /****************************************sidebar**************************************/
@@ -176,6 +198,7 @@
 	font-weight: 700;
 }
 .block-menu ul li {
+	position:relative;
 	border-bottom: 3px dotted #000;
 }
 .block-menu ul li a {
@@ -186,7 +209,31 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
+.block-menu ul li a:hover,.block-menu .news.current {
+	color: #1493cf;
+}
+.block-menu .news {
+	padding:7px 0;
+	width:160px;
+	line-height: 16px;
+	text-transform: none;
+}
+.block-menu .news-button {
+	position:absolute;
+	top:30px;
+	left:210px;
+	padding-left:4px;
+	width:78px;
+	background:url(images/news-gray.png) no-repeat;
+	line-height: 20px;
+	font-size:11px;
+	color:#fff !important;
+	text-align:center;
+	text-transform: none;
+}
+.block-menu .news-button:hover,.block-menu .news-button.current {
+	background:url(images/news-blue.png) no-repeat;
+}
 /*************************************** /sidebar**************************************/
 
 
@@ -203,6 +250,9 @@
 	font-family: "Arial";
 	color: #000;
 }
+.passage p{
+	margin-bottom:25px;
+}
 .passage span {
 	margin-bottom: 32px;
 	display: block;
@@ -210,13 +260,22 @@
 	font-weight: bold;
 	color: #0392ce;
 }
+.passage h2{
+	margin-bottom:20px;
+	width:375px;
+	line-height:28px;
+	font-family:HelveticaNeue;
+	font-weight:400;
+	font-size:24px;
+	text-transform: uppercase;
+}
 /*************************************** /content***************************************/
 
 
 /**********************************************************footer**********************************************************/
 
 #footer {
-	margin:41px 0 117px;
+	margin:16px 0 117px;
 	background: #ebebeb;
 }
 #footer .global-width {
@@ -234,7 +293,7 @@
 }
 .widget-box .title {
 	display: block;
-	line-height: 23.5px;
+	line-height: 23px;
 	font-size: 13px;
 	font-weight:400;
 	color: #000;
@@ -243,4 +302,7 @@
 .widget-box a {
 	display: block;
 	color: #999b9c;
+}
+.widget-box a:hover {
+	text-decoration:none;
 }
