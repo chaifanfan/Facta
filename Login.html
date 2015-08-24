@@ -23,8 +23,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<!-- search -->
 		<div class="search">
 			<form class="search-form" method="post" action="#">
-				<input type="text" class="search-text" placeholder="ZOEKEN" />
-				<button type="submit" class="search-button">Search</button>
+				<input type="text" id="search-text" placeholder="ZOEKEN" />
+				<button type="submit" id="search-button">Search</button>
 			</form>
 		</div>
 		<!-- / search -->
@@ -86,26 +86,26 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<h1 class="title">LOGIN</h1>
 					<form class="login-form" method="" action="">
 						<p>
-							<label>Server:</label>
-							<input type="text" class="server" name="server" />
+							<label for="server">Server:</label>
+							<input type="text" id="server" name="server" />
 						</p>
 						<p>
-							<label>Grootte:</label>
-							<input type="text" class="grootte" name="grootte" />
+							<label for="grootte">Grootte:</label>
+							<input type="text" id="grootte" name="grootte" />
 						</p>
 						<p class="box">
-							<input type="checkbox" class="loginCheckbox" name="loginCheckbox" />
+							<input type="checkbox" id="loginCheckbox" name="loginCheckbox" />
 							Aanmeldingsgegevens voor deze verbinding verzenden
 						</p>
 						<p>
-							<label>Gebruiker snaam:</label>
-							<input type="text" class="gebruiker" name="gebruiker" />
+							<label for="gebruiker">Gebruiker snaam:</label>
+							<input type="text" id="gebruiker" name="gebruiker" />
 						</p>
 						<p>
-							<label>Domein:</label>
+							<label for="domein">Domein:</label>
 							<input type="text" class="domein" name="domein" />
-							<button type="submit" class="login-button">VERBINDEN</button>
 						</p>
+						<button type="submit" class="login-button">VERBINDEN</button>
 					</form>
 				</div>
 			</div>

@@ -3,7 +3,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
 <head>
-	<title>Home Page - Facta</title>
+	<title>Contact - Facta</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
@@ -35,7 +35,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				<li><a href="Activitaiten.html">ACTIVITEITEN</a></li>
 				<li><a href="News.html">NIEUWS</a></li>
 				<li><a href="#">CERTIFICATEN</a></li>
-				<li><a href="Contact.html">CONTACT</a></li>
+				<li><a href="Contact.html" class="current">CONTACT</a></li>
 				<li><a href="Login.html">LOG-IN</a></li>
 			</ul>
 		</div>
@@ -47,7 +47,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<div class="global-width">
 			<span class="mask left"></span>
 			<span class="mask right"></span>
-			<img class="pic" src="upload/pic.jpg" />
+			<img class="pic" src="upload/pic2.jpg" />
 		</div>
 	</div>
 	<!-- / middle -->
@@ -56,24 +56,44 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<span class="shadow left"></span>
 		<span class="shadow right"></span>
 		<div class="main-mid clearfix">
-			<!-- back -->
+			<!-- breadcrumbs -->
 			<div class="breadcrumbs">
 				<ul>
 					<li>U bevind zich hier<span>></span></li>
-					<li class="current">Home</li>
+					<li><a href="index.html">Home</a><span>></span></li>
+					<li class="current">CONTACT</li>
 				</ul>
 			</div>
-			<!-- / back -->
+			<!-- / breadcrumbs -->
 			<!-- sidebar -->
 			<div class="sidebar">
-				<div class="block block-menu">
-					<h1 class="title">ACTIVITEITEN</h1>
+				<div class="block block-adres">
+					<h1 class="title">ADRES<span>GEGEVENS</span></h1>
 					<ul>
-						<li><a href="#">POMPTECHNIEK</a></li>
-						<li><a href="#">AANDRIJFTECHNIEK</a></li>
-						<li><a href="#">LIFTTECHNIEK</a></li>
-						<li><a href="#">BESTURINGSTECHNIEK</a></li>
-						<li><a href="#">WERKOOP</a></li>
+						<li>Facta Products B.V.</li>
+						<li>Bezoekadres</li>
+						<li>Westerwerf 11</li>
+						<li>Postadres</li>
+						<li>Postbus 12</li>
+						<li>1910 AA Uitgeest</li>
+					</ul>
+					<ul>
+						<li>Algemeen en Verkoop:</li>
+						<li>Telefoon 0251- 361200</li>
+						<li>Fax 0251- 315403</li>
+						<li>Email info@facta.nl</li>
+					</ul>
+					<ul>
+						<li>Aandrijf- en Lifttechniek</li>
+						<li>Telefoon 0251- 361204</li>
+						<li>Fax 0251 361224</li>
+						<li>Email info@facta.nl</li>
+					</ul>
+					<ul>
+						<li>Pomp- en Besturingstechniek</li>
+						<li>Telefoon 0251- 361227</li>
+						<li>Fax 0251- 361223</li>
+						<li>Email pomptechniek@facta.nl</li>
 					</ul>
 				</div>
 			</div>
@@ -81,16 +101,51 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<!-- content -->
 			<div class="content">
 				<div class="block block-content">
-					<h1 class="title">WELKOM<span> BIJ FACTA</span></h1>
-					<div class="passage">
-						<span>
-							Solorendellut mo es ipicill essundi scipidit, sit aut occuptatum fuga. Itatem doluptaquo omniaspid quiaspi enduciature pedis dis est occaere prae. Itas assunti busapeditio inus maionse quisci ium volorro iduci ut volesti sit ide omnimus.
-						</span>
+					<h1 class="title">CONTACT</h1>
+					<form class="contact-form" method="" action="">
 						<p>
-							Itatur aspienis excerum rerunt atiati occusdaero doluptati ut quiam conserc hillacius, ipsam, conse eaque voluptium qui aut rerspiciisi diantia veliatest fugitibus rest aut etur solupta tquias re ditatis aut ut et venda cones aceaquam et qui blandi
-							re, as enimet, volest, untinveri beres inulliquam fuga. Ad utemporro doluptis magnat aut excearit eum debit ressit aut velent. Endit qui dolene conetur min non nonsectur solupid ma nulpa con cuptiatur, iur autem quatem quidunt offictur.
+							<label for="Naam bedrijf *">Naam bedrijf *</label>
+							<input type="text" id="Naam bedrijf *" name="Naam bedrijf *" />
 						</p>
-					</div>
+						<p>
+							<label for="Contactpersoon *">Contactpersoon *</label>
+							<input type="text" id="Contactpersoon *" name="Contactpersoon *" />
+						</p>
+						<p>
+							<label for="Adres">Adres</label>
+							<input type="text" id="Adres" name="Adres" />
+						</p>
+						<p>
+							<label for="Postcode / Plaats">Postcode / Plaats</label>
+							<input type="text" id="Postcode / Plaats" name="Postcode / Plaats" />
+						</p>
+						<p>
+							<label for="Land">Land</label>
+							<input type="text" id="Land" name="Land" />
+						</p>
+						<p>
+							<label for="Telefoonnummer *">Telefoonnummer *</label>
+							<input type="text" id="Telefoonnummer *" name="Telefoonnummer *" />
+						</p>
+						<p>
+							<label for="Faxnummer">Faxnummer</label>
+							<input type="text" id="Faxnummer" name="Faxnummer" />
+						</p>
+						<p>
+							<label for="E-mailadres *">E-mailadres *</label>
+							<input type="text" id="E-mailadres *" name="E-mailadres *" />
+						</p>
+						<p>
+							<label for="Website">Website</label>
+							<input type="text" id="Website" name="Website" />
+						</p>
+						<p>
+							<label for="Opmerkingen *">Opmerkingen *</label>
+							<input type="text" id="Opmerkingen *" name="Opmerkingen *" />
+						</p>
+						<button type="submit" id="contact-buttonTop">HERSTEL</button>
+						<button type="submit" id="contact-buttonBottom">VERSTUREN</button>
+					</form>
 				</div>
 			</div>
 			<!-- / content -->

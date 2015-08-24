@@ -28,7 +28,7 @@
 	background:url(images/search-tri.png) no-repeat top right;
 	padding-top:86px;
 }
-.search-text {
+#search-text {
 	padding-left: 52px;
 	float: left;
 	width: 147px;
@@ -50,7 +50,7 @@
 :-ms-input-placeholder {
 	color: #fff;
 }
-.search button {
+#search-button {
 	margin-left: 4px;
 	float: left;
 	width: 26px;
@@ -212,14 +212,12 @@
 	font-family: "Arial";
 	color: #000;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 .block-menu ul li a:hover,.block-news ul li a:hover,.block-news .news.current {
 	color: #1493cf;
 }
 .block-news .news {
-	padding:7px 0;
-	width:160px;
+	padding:7px 127px 7px 0;
 	line-height: 16px;
 	text-transform: none;
 }
@@ -227,17 +225,29 @@
 	position:absolute;
 	top:30px;
 	left:210px;
-	padding-left:4px;
-	width:78px;
-	background:url(images/news-gray.png) no-repeat;
+	padding-left:21px;
 	line-height: 20px;
 	font-size:11px;
 	color:#fff !important;
 	text-align:center;
 	text-transform: none;
 }
-.block-news .news-button:hover,.block-news .news-button.current {
-	background:url(images/news-blue.png) no-repeat;
+.block-news ul li a {
+	background:url(images/news-gray.png) no-repeat right bottom;
+}
+.block-news ul li a:hover,.block-news .news.current{
+	background:url(images/news-blue.png) no-repeat right bottom;
+}
+.block-adres ul{
+	padding:7px 0;
+	border-bottom:3px dotted #000;
+	line-height: 15px;
+}
+.block-adres ul:last-child{
+	border-bottom:none;
+}
+.block-adres ul li:first-child{
+	color:#1493cf;
 }
 /*************************************** /sidebar**************************************/
 
@@ -277,15 +287,15 @@
 .login-form{
 	margin:17px 0 103px;
 }
-.login-form p{
+.login-form p,.contact-form p{
 	margin-bottom:4px;
 }
-.login-form label{
+.login-form label,.contact-form label{
 	float:left;
 	width:123px;
 	line-height:28px;
 }
-.login-form input{
+.login-form input,.contact-form input{
 	padding:0 2px;
 	width:273px;
 	height:26px;
@@ -296,22 +306,44 @@
 	position:relative;
 	margin:41px 0;
 }
-.login-form .loginCheckbox{
+.login-form #loginCheckbox{
 	margin:3px 9px 2px 0;
 	width:13px;
 	height:13px;
 }
 .login-form .login-button{
-	margin-left:48px;
-	width: 120px;
+	margin-top:-32px;
+	margin-left:446px;
+	padding:0 26px 0 10px;
+	display:block;
 	height: 28px;
 	border: 0;
-	background: url(images/login-button.png) 0 0 no-repeat;
+	background: url(images/button-blue.png) no-repeat right top;
 	font-family:HelveticaNeue;
 	font-weight:700;
-	text-indent:-18px;
 	color:#fff;
 	cursor:pointer;
+}
+.contact-form{
+	margin:17px 0 9px;
+}
+.contact-form button{
+	margin-top:-64px;
+	margin-left:446px;
+	padding:0 46px 0 10px;
+	display:block;
+	height: 28px;
+	border: 0;
+	background: url(images/button-gray.png) no-repeat right top;
+	font-family:HelveticaNeue;
+	font-weight:700;
+	color:#fff;
+	cursor:pointer;
+}
+.contact-form #contact-buttonBottom{
+	margin-top:5px;
+	padding:0 26px 0 10px;
+	background: url(images/button-blue.png) no-repeat right top;
 }
 /*************************************** /content***************************************/
 
