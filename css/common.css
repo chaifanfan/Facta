@@ -194,18 +194,21 @@
 	text-transform: uppercase;
 }
 .block .title span {
-	margin-left:7px;
 	font-family: "HelveticaNeue";
 	font-size: 24px;
 	font-weight: 700;
 }
-.block-menu ul li,.block-news ul li {
+.block-menu ul li,.block-news ul li,.block-loginAttention ul li {
 	position:relative;
 	border-bottom: 3px dotted #000;
+	line-height: 30px;
+}
+.block-loginAttention ul li {
+	padding:10px 0;
+	line-height: 16px;
 }
 .block-menu ul li a,.block-news ul li a {
 	display: block;
-	line-height: 30px;
 	font-family: "Arial";
 	color: #000;
 	text-decoration: none;
@@ -270,6 +273,45 @@
 	font-weight:400;
 	font-size:24px;
 	text-transform: uppercase;
+}
+.login-form{
+	margin:17px 0 103px;
+}
+.login-form p{
+	margin-bottom:4px;
+}
+.login-form label{
+	float:left;
+	width:123px;
+	line-height:28px;
+}
+.login-form input{
+	padding:0 2px;
+	width:273px;
+	height:26px;
+	border:1px solid #e2e2e2;
+	background:#eee;
+}
+.login-form .box{
+	position:relative;
+	margin:41px 0;
+}
+.login-form .loginCheckbox{
+	margin:3px 9px 2px 0;
+	width:13px;
+	height:13px;
+}
+.login-form .login-button{
+	margin-left:48px;
+	width: 120px;
+	height: 28px;
+	border: 0;
+	background: url(images/login-button.png) 0 0 no-repeat;
+	font-family:HelveticaNeue;
+	font-weight:700;
+	text-indent:-18px;
+	color:#fff;
+	cursor:pointer;
 }
 /*************************************** /content***************************************/
 

@@ -3,7 +3,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
 <head>
-	<title>News - Facta</title>
+	<title>Login - Facta</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
@@ -33,10 +33,10 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<ul>
 				<li><a href="Content Page.html">OVER FACTA</a></li>
 				<li><a href="Activitaiten.html">ACTIVITEITEN</a></li>
-				<li><a href="News.html" class="current">NIEUWS</a></li>
+				<li><a href="News.html">NIEUWS</a></li>
 				<li><a href="#">CERTIFICATEN</a></li>
 				<li><a href="Contact.html">CONTACT</a></li>
-				<li><a href="Login.html">LOG-IN</a></li>
+				<li><a href="Login.html" class="current">LOG-IN</a></li>
 			</ul>
 		</div>
 		<!-- / nav -->
@@ -61,26 +61,20 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				<ul>
 					<li>U bevind zich hier<span>></span></li>
 					<li><a href="index.html">Home</a><span>></span></li>
-					<li class="current">NIEUWS</li>
+					<li class="current">LOGIN</li>
 				</ul>
 			</div>
 			<!-- / breadcrumbs -->
 			<!-- sidebar -->
 			<div class="sidebar">
-				<div class="block block-news">
-					<h1 class="title">LAATSTE<span> NIEUWS</span></h1>
+				<div class="block block-loginAttention">
+					<h1 class="title"><span>HOE</span> WERKT HET</h1>
 					<ul>
 						<li>
-							<a href="#" class="news">Opdracht voor automatiseren 50 stuwen ...<span class="news-button">Bekijken</span></a>
+							Typ de naam van de andere computer die u wilt gebruiken, selecteer de gewenste grootte van het beeldscherm voor de verbinding en klik op Verbinding maken.
 						</li>
 						<li>
-							<a href="#" class="news">Facta als eerste in NL gecertificeerd voor ...<span class="news-button">Bekijken</span></a>
-						</li>
-						<li>
-							<a href="News.html" class="news current">Facta investeert als eerste in blikpakkettester ...<span class="news-button current">Bekijken</span></a>
-						</li>
-						<li>
-							<a href="#" class="news">Facta vergroot marktpositie door overname Fremo ...<span class="news-button">Bekijken</span></a>
+							Zodra de verbindingspagina wordt weergegeven, kunt u deze aan uw favorieten toevoegen zodat u later gemakkelijk opnieuw verbinding met de computer kunt maken.
 						</li>
 					</ul>
 				</div>
@@ -88,19 +82,31 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<!-- / sidebar -->
 			<!-- content -->
 			<div class="content">
-				<div class="block">
-					<h1 class="title">NIEUWS<span> BERICHT</span></h1>
-					<div class="block-content">
-						<h2>Facta investeert als eerste in blikpakkettester</h2>
-							<div class="passage">
-								<p>
-									Onlangs heeft Facta als eerste in Nederland in een blikpakkettester ge?nvesteerd. Met dit specifieke meetinstrument is het mogelijk om het exacte vermogensverlies van het blikpakket te meten. Deze meting zal bij alle repararties tot de standaardprocedure gaan behoren, waardoor de kwaliteit van de reparatie wordt verhoogd.				
-								</p>
-								<p>
-									Op donderdag 4 juni a.s. zal er een demonstratie worden gegeven tijdens de vergadering van de vakgroep EMO. Ge?ntereseerden over de werking van de blikpakkettester zijn altijd welkom bij Facta in Uitgeest.
-								</p>
-							</div>
-					</div>
+				<div class="block block-content">
+					<h1 class="title">LOGIN</h1>
+					<form class="login-form" method="" action="">
+						<p>
+							<label>Server:</label>
+							<input type="text" class="server" name="server" />
+						</p>
+						<p>
+							<label>Grootte:</label>
+							<input type="text" class="grootte" name="grootte" />
+						</p>
+						<p class="box">
+							<input type="checkbox" class="loginCheckbox" name="loginCheckbox" />
+							Aanmeldingsgegevens voor deze verbinding verzenden
+						</p>
+						<p>
+							<label>Gebruiker snaam:</label>
+							<input type="text" class="gebruiker" name="gebruiker" />
+						</p>
+						<p>
+							<label>Domein:</label>
+							<input type="text" class="domein" name="domein" />
+							<button type="submit" class="login-button">VERBINDEN</button>
+						</p>
+					</form>
 				</div>
 			</div>
 			<!-- / content -->
