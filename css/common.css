@@ -162,7 +162,9 @@
 	text-decoration: none;
 	text-transform: capitalize;
 }
+
 .breadcrumbs .current{
+	
 	color:#000;
 	text-decoration: none;
 }
@@ -197,11 +199,11 @@
 	font-size: 24px;
 	font-weight: 700;
 }
-.block-menu ul li {
+.block-menu ul li,.block-news ul li {
 	position:relative;
 	border-bottom: 3px dotted #000;
 }
-.block-menu ul li a {
+.block-menu ul li a,.block-news ul li a {
 	display: block;
 	line-height: 30px;
 	font-family: "Arial";
@@ -209,16 +211,16 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.block-menu ul li a:hover,.block-menu .news.current {
+.block-menu ul li a:hover,.block-news ul li a:hover,.block-news .news.current {
 	color: #1493cf;
 }
-.block-menu .news {
+.block-news .news {
 	padding:7px 0;
 	width:160px;
 	line-height: 16px;
 	text-transform: none;
 }
-.block-menu .news-button {
+.block-news .news-button {
 	position:absolute;
 	top:30px;
 	left:210px;
@@ -231,7 +233,7 @@
 	text-align:center;
 	text-transform: none;
 }
-.block-menu .news-button:hover,.block-menu .news-button.current {
+.block-news .news-button:hover,.block-news .news-button.current {
 	background:url(images/news-blue.png) no-repeat;
 }
 /*************************************** /sidebar**************************************/
@@ -260,8 +262,8 @@
 	font-weight: bold;
 	color: #0392ce;
 }
-.passage h2{
-	margin-bottom:20px;
+.block-content h2{
+	margin-top:25px;
 	width:375px;
 	line-height:28px;
 	font-family:HelveticaNeue;
