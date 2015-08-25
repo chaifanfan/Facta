@@ -201,52 +201,55 @@
 .block-menu ul li,.block-news ul li,.block-loginAttention ul li {
 	position:relative;
 	border-bottom: 3px dotted #000;
-	line-height: 30px;
 }
 .block-loginAttention ul li {
 	padding:10px 0;
 	line-height: 16px;
 }
-.block-menu ul li a,.block-news ul li a {
+.block-menu a,
+.block-news a {
 	display: block;
 	font-family: "Arial";
 	color: #000;
+	line-height: 30px;
 	text-decoration: none;
+	text-transform: uppercase;
 }
-.block-menu ul li a:hover,.block-news ul li a:hover,.block-news .news.current {
+.block-menu a:hover,
+.block-news a:hover,
+.block-news .news.current {
 	color: #1493cf;
 }
-.block-news .news {
+.block-news a {
 	padding:7px 127px 7px 0;
 	line-height: 16px;
 	text-transform: none;
 }
-.block-news .news-button {
+.block-news a span {
 	position:absolute;
 	top:30px;
 	left:210px;
-	padding-left:21px;
+	padding:0 18px 0 22px;
+	background:url(images/news-gray.png) no-repeat;
 	line-height: 20px;
 	font-size:11px;
 	color:#fff !important;
-	text-align:center;
 	text-transform: none;
 }
-.block-news ul li a {
-	background:url(images/news-gray.png) no-repeat right bottom;
+.block-news a:hover span,
+.block-news .news .current {
+	background:url(images/news-blue.png) no-repeat;
 }
-.block-news ul li a:hover,.block-news .news.current{
-	background:url(images/news-blue.png) no-repeat right bottom;
-}
-.block-adres ul{
+
+.block-adres dl{
 	padding:7px 0;
 	border-bottom:3px dotted #000;
 	line-height: 15px;
 }
-.block-adres ul:last-child{
+.block-adres dl:last-child{
 	border-bottom:none;
 }
-.block-adres ul li:first-child{
+.block-adres dl dt{
 	color:#1493cf;
 }
 /*************************************** /sidebar**************************************/
@@ -310,6 +313,10 @@
 	margin:3px 9px 2px 0;
 	width:13px;
 	height:13px;
+}
+.login-form .boxinfo{
+	float:none;
+	width:auto;
 }
 .login-form .login-button{
 	margin-top:-32px;
