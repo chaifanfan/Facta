@@ -1,5 +1,4 @@
 /* header middle main footer */
-
 .button {
 	position:absolute;
 	right:-3px;
@@ -7,8 +6,9 @@
 	padding:0 18px 0 22px;
 	background:url(images/news-gray.png) no-repeat;
 	line-height: 20px;
-	font-size:11px;
+	font-size:11px !important;
 	color:#fff !important;
+	text-decoration:none;
 }
 /**********************************************************header**********************************************************/
 
@@ -213,7 +213,7 @@
 	font-size: 24px;
 	font-weight: 700;
 }
-.block-menu .act{
+.block-menu .act{/*activitriten*/
 	margin-bottom:56px;
 }
 .block-menu .submenu li{
@@ -221,8 +221,8 @@
 }
 .block-menu .menu,
 .block-menu .submenu li:last-child,
-.block-news ul li,
-.block-loginAttention ul li {
+.block-news li,
+.block-login li {
 	position:relative;
 	border-bottom: 3px dotted #000;
 }
@@ -232,13 +232,13 @@
 .block-menu .submenu a{
 	line-height:8px;
 }
-.block-loginAttention li {
+.block-login li {
 	padding:10px 0;
 	line-height: 16px;
 }
 .block-menu a,
 .block-menu .menu,
-.block-news a {
+.block-news .news {
 	display: block;
 	font-family: "Arial";
 	color: #000;
@@ -248,31 +248,22 @@
 	cursor:pointer;
 }
 .block-menu a:hover,
-.block-menu .menu:hover,
 .block-news a:hover,
 .block-news .news.current,
 .vacancies-content a:hover {
 	color: #1493cf;
 }
-.block-news a {
+.block-news .news {
 	padding:7px 127px 7px 0;
 	line-height: 16px;
 	text-transform: none;
 }
-/*
-.block-news a span {
-	right:-3px;
-	bottom:-4px;
-	text-transform: none;
-}
-*/
-.block-news a:hover span,
+.block-news .news:hover .button-news,
 .block-news .news .current,
-.result .button-result:hover,
-.vacancies-content a:hover .button-vac {
+.block-result .button-result:hover,
+.block-vacancies .button-vac:hover {
 	background:url(images/news-blue.png) no-repeat;
 }
-
 .block-adres dl{
 	padding:7px 0;
 	border-bottom:3px dotted #000;
@@ -298,13 +289,17 @@
 	display: block;
 	line-height: 24px;
 	font-family: "Arial";
-/*	color: #000;*/
 }
 .passage p{
 	margin-bottom:25px;
 }
+.passage .fancybox{
+	float:right;
+}
 .passage .spe{
 	margin-top:-8px;
+	float:left;
+	width:331px;
 }
 .passage span {
 	margin-bottom: 32px;
@@ -318,7 +313,6 @@
 	width:375px;
 	line-height:28px;
 	font-family:HelveticaNeue;
-	font-weight:400;
 	font-size:24px;
 	text-transform: uppercase;
 }
@@ -329,8 +323,9 @@
 	margin-bottom:4px;
 }
 .login-form label,.contact-form label{
+	padding-right:10px;
 	float:left;
-	width:123px;
+	width:113px;
 	line-height:28px;
 }
 .login-form input[type="text"],
@@ -393,89 +388,121 @@
 	padding:0 26px 0 10px;
 	background: url(images/button-blue.png) no-repeat right top;
 }
-.fancybox{
-	margin:25px 0 0 22px;
-	float:right;
+.block-vacancies th {
+	font-weight:400;
+	color:#1493cf;
+	text-align:left;
 }
-.block-result h3{
+.block-vacancies th:last-child {
+	width:50px;
+}
+.block-vacancies th,
+.block-vacancies td{
+	padding:5px 0;
 	border-bottom:3px dotted #000;
-	font-weight:normal;
+}
+.block-vacancies .summary td:first-child{
+	font-size:15px;
+}
+.block-vacancies .summary.current{
+	color:#1493cf;
+}
+.block-vacancies .bodytext{
+	padding:2px 0 22px 0;
+}
+.block-vacancies .bodytext p,
+.block-vacancies .bodytext ul{
+	margin-bottom:13px;
+}
+.block-vacancies .bodytext h4{
+	color:#1493cf;
+}
+.block-vacancies .bodytext li{
+	margin-left:12px;
+	list-style:disc;
+}
+.block-vacancies .button-vac{
+	right:39px;
+}
+.block-vacancies .open-first{
+	bottom:698px;
+}
+.block-vacancies .open-second{
+	bottom:166px;
+}
+.block-vacancies .open-third{
+	bottom:128px;
+}
+.block-vacancies .open-forth{
+	bottom:91px;
+}
+.block-vacancies .button.close{
+	padding:0 21px 0 24px;
+	background:url(images/news-blue.png) no-repeat;
+}
+.block-vacancies .button.first{
+	bottom:203px;
+}
+.block-result .result-title{
+	border-bottom:3px dotted #000;
 	color:#939598;
 	line-height:30px;
 	text-transform: uppercase;
 }
-.block-result h3 span{
+.block-result .result-title span{
 	color:#000;
 }
-.block-result .result-title{
-	display:block;
-	font-size:15px;
-}
-.block-result li{
+.block-result .item{
 	position:relative;
 	padding:12px 0 12px 5px;
 	border-bottom:3px dotted #000;
 }
-.block-result .result-title a{
-	margin-left:9px;
-	padding-left:6px;
-	border-left:1px solid #000;
-	font-size:12px;
-	color:#60acd9;
-	text-decoration:none;
+.block-result .item-title{
+	font-size:15px;
 }
-.block-result .result-content{
+.block-result .item p{
 	padding-right:90px;
 	color:#939598;
 }
-/*
-.block-result .button-result{
-	right:-3px;
-	bottom:-4px;
+.block-result .pagination{
+	margin-top:27px;
+	float:right;
 }
-*/
-.vacancies-content .list{
-	position:relative;
-	padding:9px 0;
-	border-bottom:3px dotted #000;
+.block-result .pagination span{
+	margin-left:7px;
+	float:left;
 }
-.vacancies-content .top{
-	color:#1493cf;
-}
-.vacancies-content a{
-	color:#000;
-}
-.vacancies-content span{
+.block-result .pagination a{
+	float:left;
 	display:inline-block;
+	margin-left:5px;
+	color:#000;
+	text-decoration:none;
 }
-.vacancies-content .list-title{
-	width:324px;
+.block-result .pagination-button{
+	width:19px;
+	height:19px;
 }
-.vacancies-content .level{
-	width:107px;
+.block-result .pagination-button.first {
+	background:url(images/pagination-first.png) no-repeat ;
 }
-.vacancies-content a .list-title{
-	font-size:15px;
+.block-result .pagination-button.previous {
+	background:url(images/pagination-previous.png) no-repeat ;
 }
-/*
-.vacancies-content .button-vac{
-	right:-3px;
-	bottom:-4px;
+.block-result .pagination-button.next {
+	background:url(images/pagination-next.png) no-repeat ;
 }
-*/
-.vacancies-content .bodytext{
-	padding:12px 80px 0 0;
+.block-result .pagination-button.last {
+	background:url(images/pagination-last.png) no-repeat ;
 }
-.bodytext p{
-	margin-bottom:13px;
-}
-.bodytext h4{
-	font-weight:400;
+.block-result .pagination .current{
 	color:#1493cf;
 }
-.bodytext li{
-	margin-left:12px;
-	list-style:disc;
+.block-result .pagination .first.disabled{
+	background:url(images/current-first.png) no-repeat ;
+}
+.block-result .pagination .previous.disabled{
+	background:url(images/current-previous.png) no-repeat ;
 }
 /*************************************** /content***************************************/
 
@@ -503,8 +530,6 @@
 	display: block;
 	line-height: 23px;
 	font-size: 13px;
-	font-weight:400;
-/*	color: #000;*/
 	text-transform: capitalize;
 }
 .widget-box a {
