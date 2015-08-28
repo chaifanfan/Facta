@@ -8,6 +8,34 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			var $btnOpens = $('.open');
+			var $btnClose = $('.close');
+
+			$btnOpens.click(function(){
+				var _this = $(this);
+				$btnOpens.each(function(item) {
+					$(this).show();
+					$(this).parents('.summary').find('td').removeClass('color');
+				});
+				_this.hide();
+				$btnClose.each(function(item) {
+					$(this).parent().slideUp();
+				});
+				$(this).parents('.summary').siblings('.detail').find('.bodytext>div').slideDown();
+				$(this).parents('.summary').find('td').addClass('color');
+			});
+			$btnClose.click(function(){
+				$btnOpens.each(function(item) {
+					$(this).show();
+				});
+				$(this).parent().slideUp();
+				$(this).parents('.detail').siblings('.summary').find('td').removeClass('color');
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -142,11 +170,11 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 							</tr>
 						</thead>
 						<tbody class="item">
-							<tr class="summary current">
+							<tr class="summary">
 								<td>Servicemonteur Pomptechniek Riolering</td>
 								<td>LBO/MBO</td>
 								<td>40 uur</td>
-								<td><div><a href="#" class="button button-vac open-first">Bekijken</a></div></td>
+								<td><div><span class="button open">Bekijken</span></div></td>
 							</tr>
 							<tr class="detail">
 								<td colspan="3" class="bodytext">
@@ -175,7 +203,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
 											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
 										</ul>
-										<a href="#" class="button button-vac close first">Sluiten</a>
+										<span class="button close">Sluiten</span>
 									</div>
 								</td>
 							</tr>
@@ -185,7 +213,38 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 								<td>Servicemonteur Aandrijftechniek</td>
 								<td>MBO/ervaring</td>
 								<td>40 uur</td>
-								<td><div><a href="#" class="button button-vac open-second">Bekijken</a></div></td>
+								<td><div><span class="button open">Bekijken</span></div></td>
+							</tr>
+							<tr class="detail">
+								<td colspan="3" class="bodytext">
+									<div>
+										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+										<ul>
+											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+											<li>servicegerichtheid;</li>
+											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
+											<li>stressbestendigheid;</li>
+											<li>het hebben van een flexibele instelling.</li>
+										</ul>
+										<h4>Wat vragen wij:</h4>
+										<ul>
+											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+											<li>VCA;</li>
+											<li>rijbewijs B-E;</li>
+											<li>bereidheid tot het lopen van consignatiedienst.</li>
+										</ul>
+										<h4>Wat bieden wij:</h4>
+										<ul>
+											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+										</ul>
+										<span class="button close">Sluiten</span>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 						<tbody class="item">
@@ -193,7 +252,38 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 								<td>Binnendienstmonteur Aandrijftechniek</td>
 								<td>MBO/ervaring</td>
 								<td>40 uur</td>
-								<td><div><a href="#" class="button button-vac open-third">Bekijken</a></div></td>
+								<td><div><span class="button open">Bekijken</span></div></td>
+							</tr>
+							<tr class="detail">
+								<td colspan="3" class="bodytext">
+									<div>
+										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+										<ul>
+											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+											<li>servicegerichtheid;</li>
+											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
+											<li>stressbestendigheid;</li>
+											<li>het hebben van een flexibele instelling.</li>
+										</ul>
+										<h4>Wat vragen wij:</h4>
+										<ul>
+											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+											<li>VCA;</li>
+											<li>rijbewijs B-E;</li>
+											<li>bereidheid tot het lopen van consignatiedienst.</li>
+										</ul>
+										<h4>Wat bieden wij:</h4>
+										<ul>
+											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+										</ul>
+										<span class="button close">Sluiten</span>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 						<tbody class="item">
@@ -201,7 +291,38 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 								<td>Trillingsanalist</td>
 								<td>MBO/HBO</td>
 								<td>40 uur</td>
-								<td><div><a href="#" class="button button-vac open-forth">Bekijken</a></div></td>
+								<td><div><span class="button open">Bekijken</span></div></td>
+							</tr>
+							<tr class="detail">
+								<td colspan="3" class="bodytext">
+									<div>
+										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+										<ul>
+											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+											<li>servicegerichtheid;</li>
+											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
+											<li>stressbestendigheid;</li>
+											<li>het hebben van een flexibele instelling.</li>
+										</ul>
+										<h4>Wat vragen wij:</h4>
+										<ul>
+											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+											<li>VCA;</li>
+											<li>rijbewijs B-E;</li>
+											<li>bereidheid tot het lopen van consignatiedienst.</li>
+										</ul>
+										<h4>Wat bieden wij:</h4>
+										<ul>
+											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+										</ul>
+										<span class="button close">Sluiten</span>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 					</table>

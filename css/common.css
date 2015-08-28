@@ -9,6 +9,7 @@
 	font-size:11px !important;
 	color:#fff !important;
 	text-decoration:none;
+	cursor:pointer;
 }
 /**********************************************************header**********************************************************/
 
@@ -388,6 +389,9 @@
 	padding:0 26px 0 10px;
 	background: url(images/button-blue.png) no-repeat right top;
 }
+.block-vacancies table{
+	min-width: 573px;
+}
 .block-vacancies th {
 	font-weight:400;
 	color:#1493cf;
@@ -397,15 +401,26 @@
 	width:50px;
 }
 .block-vacancies th,
-.block-vacancies td{
+.block-vacancies .item .detail td:last-child{
 	padding:5px 0;
 	border-bottom:3px dotted #000;
+}
+.block-vacancies .item .detail td:last-child{
+	padding:0;
 }
 .block-vacancies .summary td:first-child{
 	font-size:15px;
 }
-.block-vacancies .summary.current{
-	color:#1493cf;
+.block-vacancies .summary div{
+	position: relative;
+}
+.block-vacancies .summary td{
+	padding:1px 0;
+}
+.block-vacancies .detail .bodytext>div{
+	position:relative;
+	display:none;
+	padding:10px 0 22px;
 }
 .block-vacancies .bodytext{
 	padding:2px 0 22px 0;
@@ -421,27 +436,18 @@
 	margin-left:12px;
 	list-style:disc;
 }
-.block-vacancies .button-vac{
-	right:39px;
+.block-vacancies .open{
+	bottom: -19px;
+	right: -9px;
 }
-.block-vacancies .open-first{
-	bottom:698px;
-}
-.block-vacancies .open-second{
-	bottom:166px;
-}
-.block-vacancies .open-third{
-	bottom:128px;
-}
-.block-vacancies .open-forth{
-	bottom:91px;
-}
-.block-vacancies .button.close{
+.block-vacancies .close{
+	bottom: -4px;
+	right: -60px;
 	padding:0 21px 0 24px;
 	background:url(images/news-blue.png) no-repeat;
 }
-.block-vacancies .button.first{
-	bottom:203px;
+.color{
+	color:#1493cf;
 }
 .block-result .result-title{
 	border-bottom:3px dotted #000;
