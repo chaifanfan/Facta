@@ -395,6 +395,7 @@
 .block-vacancies table{
 	width: 100%;
 	margin-bottom: 64px;
+	border-collapse:collapse;
 }
 .block-vacancies th {
 	font-weight:400;
@@ -422,7 +423,7 @@
 	position: relative;
 }
 .block-vacancies .summary td{
-	padding:1px 0;
+	padding:2px 0;
 }
 .block-vacancies .detail .bodytext>div{
 	position:relative;
@@ -444,7 +445,7 @@
 	list-style:disc;
 }
 .block-vacancies .open{
-	bottom: -19px;
+	bottom: -18px;
 	right: -9px;
 }
 .block-vacancies .close{
