@@ -219,6 +219,10 @@
 }
 .block-menu .submenu li{
 	height:18px;
+	padding-left: 36px;
+}
+.block-menu .submenu li .current{
+	color: #0392ce;
 }
 .block-menu .menu,
 .block-menu .submenu li:last-child,
@@ -262,7 +266,7 @@
 .block-news .news:hover .button-news,
 .block-news .news .current,
 .block-result .button-result:hover,
-.block-vacancies .button-vac:hover {
+.block-vacancies .open:hover {
 	background:url(images/news-blue.png) no-repeat;
 }
 .block-adres dl{
@@ -296,11 +300,10 @@
 }
 .passage .fancybox{
 	float:right;
+	margin-left: 22px;
 }
 .passage .spe{
 	margin-top:-8px;
-	float:left;
-	width:331px;
 }
 .passage span {
 	margin-bottom: 32px;
@@ -390,12 +393,16 @@
 	background: url(images/button-blue.png) no-repeat right top;
 }
 .block-vacancies table{
-	min-width: 573px;
+	width: 100%;
+	margin-bottom: 64px;
 }
 .block-vacancies th {
 	font-weight:400;
 	color:#1493cf;
 	text-align:left;
+}
+.block-vacancies th:first-child {
+	width:352px;
 }
 .block-vacancies th:last-child {
 	width:50px;
@@ -420,7 +427,7 @@
 .block-vacancies .detail .bodytext>div{
 	position:relative;
 	display:none;
-	padding:10px 0 22px;
+	padding:10px 86px 22px 0;
 }
 .block-vacancies .bodytext{
 	padding:2px 0 22px 0;
@@ -442,7 +449,7 @@
 }
 .block-vacancies .close{
 	bottom: -4px;
-	right: -60px;
+	right: -8px;
 	padding:0 21px 0 24px;
 	background:url(images/news-blue.png) no-repeat;
 }
@@ -460,18 +467,17 @@
 }
 .block-result .item{
 	position:relative;
-	padding:12px 0 12px 5px;
+	padding:12px 90px 12px 5px;
 	border-bottom:3px dotted #000;
 }
 .block-result .item-title{
 	font-size:15px;
 }
 .block-result .item p{
-	padding-right:90px;
 	color:#939598;
 }
 .block-result .pagination{
-	margin-top:27px;
+	margin:27px 0 66px;
 	float:right;
 }
 .block-result .pagination span{
@@ -501,14 +507,30 @@
 .block-result .pagination-button.last {
 	background:url(images/pagination-last.png) no-repeat ;
 }
-.block-result .pagination .current{
+.block-result .pagination .current,
+.block-result .pagination .pagination-num:hover{
 	color:#1493cf;
 }
-.block-result .pagination .first.disabled{
+.block-result .pagination .first:hover{
 	background:url(images/current-first.png) no-repeat ;
 }
-.block-result .pagination .previous.disabled{
+.block-result .pagination .previous:hover{
 	background:url(images/current-previous.png) no-repeat ;
+}
+.block-result .pagination .next:hover{
+	background:url(images/current-next.png) no-repeat ;
+}
+.block-result .pagination .last:hover{
+	background:url(images/current-last.png) no-repeat ;
+}
+.block-result .pagination .disabled{
+	cursor:default ;
+}
+.block-result .pagination .first.disabled{
+	background:url(images/disabled-first.png) no-repeat ;
+}
+.block-result .pagination .previous.disabled{
+	background:url(images/disabled-previous.png) no-repeat ;
 }
 /*************************************** /content***************************************/
 
