@@ -18,21 +18,21 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				var _this = $(this);
 				$btnOpens.each(function(item) {
 					$(this).show();
-					$(this).parents('.summary').find('td').removeClass('color');
+					$(this).parents('.summary').find('span').removeClass('color');
 				});
 				_this.hide();
 				$btnClose.each(function(item) {
 					$(this).parent().slideUp();
 				});
-				$(this).parents('.summary').siblings('.detail').find('.bodytext>div').slideDown();
-				$(this).parents('.summary').find('td').addClass('color');
+				$(this).parents('.summary').siblings('.detail').find('.bodytext').slideDown();
+				$(this).parents('.summary').find('span').addClass('color');
 			});
 			$btnClose.click(function(){
 				$btnOpens.each(function(item) {
 					$(this).show();
 				});
 				$(this).parent().slideUp();
-				$(this).parents('.detail').siblings('.summary').find('td').removeClass('color');
+				$(this).parents('.detail').siblings('.summary').find('span').removeClass('color');
 			});
 		});
 	</script>
@@ -120,172 +120,159 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<div class="content">
 				<div class="block block-vacancies">
 					<h1 class="title">VACATURES</h1>
-					<table>
-						<thead>
-							<tr>
-								<th>Functie</th>
-								<th>Niveau</th>
-								<th>Contract</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody class="item">
-							<tr class="summary">
-								<td>Servicemonteur Pomptechniek Riolering</td>
-								<td>LBO/MBO</td>
-								<td>40 uur</td>
-								<td><div><span class="button open">Bekijken</span></div></td>
-							</tr>
-							<tr class="detail">
-								<td colspan="4" class="bodytext">
-									<div>
-										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
-										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
-										<ul>
-											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
-											<li>servicegerichtheid;</li>
-											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
-											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
-											<li>stressbestendigheid;</li>
-											<li>het hebben van een flexibele instelling.</li>
-										</ul>
-										<h4>Wat vragen wij:</h4>
-										<ul>
-											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
-											<li>VCA;</li>
-											<li>rijbewijs B-E;</li>
-											<li>bereidheid tot het lopen van consignatiedienst.</li>
-										</ul>
-										<h4>Wat bieden wij:</h4>
-										<ul>
-											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
-											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
-											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
-											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
-										</ul>
-										<span class="button close">Sluiten</span>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="item">
-							<tr class="summary">
-								<td>Servicemonteur Aandrijftechniek</td>
-								<td>MBO/ervaring</td>
-								<td>40 uur</td>
-								<td><div><span class="button open">Bekijken</span></div></td>
-							</tr>
-							<tr class="detail">
-								<td colspan="4" class="bodytext">
-									<div>
-										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
-										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
-										<ul>
-											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
-											<li>servicegerichtheid;</li>
-											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
-											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
-											<li>stressbestendigheid;</li>
-											<li>het hebben van een flexibele instelling.</li>
-										</ul>
-										<h4>Wat vragen wij:</h4>
-										<ul>
-											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
-											<li>VCA;</li>
-											<li>rijbewijs B-E;</li>
-											<li>bereidheid tot het lopen van consignatiedienst.</li>
-										</ul>
-										<h4>Wat bieden wij:</h4>
-										<ul>
-											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
-											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
-											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
-											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
-										</ul>
-										<span class="button close">Sluiten</span>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="item">
-							<tr class="summary">
-								<td>Binnendienstmonteur Aandrijftechniek</td>
-								<td>MBO/ervaring</td>
-								<td>40 uur</td>
-								<td><div><span class="button open">Bekijken</span></div></td>
-							</tr>
-							<tr class="detail">
-								<td colspan="4" class="bodytext">
-									<div>
-										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
-										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
-										<ul>
-											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
-											<li>servicegerichtheid;</li>
-											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
-											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
-											<li>stressbestendigheid;</li>
-											<li>het hebben van een flexibele instelling.</li>
-										</ul>
-										<h4>Wat vragen wij:</h4>
-										<ul>
-											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
-											<li>VCA;</li>
-											<li>rijbewijs B-E;</li>
-											<li>bereidheid tot het lopen van consignatiedienst.</li>
-										</ul>
-										<h4>Wat bieden wij:</h4>
-										<ul>
-											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
-											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
-											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
-											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
-										</ul>
-										<span class="button close">Sluiten</span>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="item">
-							<tr class="summary">
-								<td>Trillingsanalist</td>
-								<td>MBO/HBO</td>
-								<td>40 uur</td>
-								<td><div><span class="button open">Bekijken</span></div></td>
-							</tr>
-							<tr class="detail">
-								<td colspan="4" class="bodytext">
-									<div>
-										<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
-										<h4>De geschikte kandidaat kenmerkt zich door:</h4>
-										<ul>
-											<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
-											<li>servicegerichtheid;</li>
-											<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
-											<li>het hebben van ervaring in een soortgelijke functie en branche is een pr¨¦;</li>
-											<li>stressbestendigheid;</li>
-											<li>het hebben van een flexibele instelling.</li>
-										</ul>
-										<h4>Wat vragen wij:</h4>
-										<ul>
-											<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
-											<li>VCA;</li>
-											<li>rijbewijs B-E;</li>
-											<li>bereidheid tot het lopen van consignatiedienst.</li>
-										</ul>
-										<h4>Wat bieden wij:</h4>
-										<ul>
-											<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
-											<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
-											<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
-											<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
-										</ul>
-										<span class="button close">Sluiten</span>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="item item-header">
+						<span>Functie</span>
+						<span class="second">Niveau</span>
+						<span>Contract</span>
+					</div>
+					<div class="item">
+						<div class="summary">
+							<span>Servicemonteur Pomptechniek Riolering</span>
+							<span  class="second">LBO/MBO</span>
+							<span>40 uur</span>
+							<a class="button open">Bekijken</a>
+						</div>
+						<div class="detail">
+							<div class="bodytext">
+								<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+								<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+								<ul>
+									<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+									<li>servicegerichtheid;</li>
+									<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+									<li>het hebben van ervaring in een soortgelijke functie en branche is een prÂ¨Â¦;</li>
+									<li>stressbestendigheid;</li>
+									<li>het hebben van een flexibele instelling.</li>
+								</ul>
+								<h4>Wat vragen wij:</h4>
+								<ul>
+								<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+								<li>VCA;</li>
+								<li>rijbewijs B-E;</li>
+								<li>bereidheid tot het lopen van consignatiedienst.</li>
+								</ul>
+								<h4>Wat bieden wij:</h4>
+								<ul>
+									<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+									<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+									<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+									<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+								</ul>
+								<a class="button close">Sluiten</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="summary">
+							<span>Servicemonteur Aandrijftechniek</span>
+							<span  class="second">MBO/ervaring</span>
+							<span>40 uur</span>
+							<a class="button open">Bekijken</a>
+						</div>
+						<div class="detail">
+							<div class="bodytext">
+								<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+								<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+								<ul>
+									<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+									<li>servicegerichtheid;</li>
+									<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+									<li>het hebben van ervaring in een soortgelijke functie en branche is een prÂ¨Â¦;</li>
+									<li>stressbestendigheid;</li>
+									<li>het hebben van een flexibele instelling.</li>
+								</ul>
+								<h4>Wat vragen wij:</h4>
+								<ul>
+								<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+								<li>VCA;</li>
+								<li>rijbewijs B-E;</li>
+								<li>bereidheid tot het lopen van consignatiedienst.</li>
+								</ul>
+								<h4>Wat bieden wij:</h4>
+								<ul>
+									<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+									<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+									<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+									<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+								</ul>
+								<a class="button close">Sluiten</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="summary">
+							<span>Binnendienstmonteur Aandrijftechniek</span>
+							<span  class="second">MBO/ervaring</span>
+							<span>40 uur</span>
+							<a class="button open">Bekijken</a>
+						</div>
+						<div class="detail">
+							<div class="bodytext">
+								<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+								<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+								<ul>
+									<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+									<li>servicegerichtheid;</li>
+									<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+									<li>het hebben van ervaring in een soortgelijke functie en branche is een prÂ¨Â¦;</li>
+									<li>stressbestendigheid;</li>
+									<li>het hebben van een flexibele instelling.</li>
+								</ul>
+								<h4>Wat vragen wij:</h4>
+								<ul>
+								<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+								<li>VCA;</li>
+								<li>rijbewijs B-E;</li>
+								<li>bereidheid tot het lopen van consignatiedienst.</li>
+								</ul>
+								<h4>Wat bieden wij:</h4>
+								<ul>
+									<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+									<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+									<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+									<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+								</ul>
+								<a class="button close">Sluiten</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="summary">
+							<span>Trillingsanalist</span>
+							<span  class="second">MBO/HBO</span>
+							<span>40 uur</span>
+							<a class="button open">Bekijken</a>
+						</div>
+						<div class="detail">
+							<div class="bodytext">
+								<p>Voor onze afdeling Aandrijftechniek/Inspectie en Beheer (I&B) zijn wij op zoek naar een service- en onderhoudsmonteur, die in staat is zelfstandig te werken en ervaring heeft op het gebied van reparatie en onderhoud aan rotating equipment (elektromotoren, pompen etc) .De werkzaamheden zijn zowel mechanisch als elektrisch en vinden plaats bij klanten door heel Nederland. Als service- en onderhoudsmonteur beschik je over een volledig ingerichte servicebus en ben je het visitekaartje van Facta.</p>
+								<h4>De geschikte kandidaat kenmerkt zich door:</h4>
+								<ul>
+									<li>het hebben van goede communicatieve en collegiale eigenschappen;</li>
+									<li>servicegerichtheid;</li>
+									<li>het hebben van inzicht in technische normen en specificaties/kennis van Aandrijftechniek;</li>
+									<li>het hebben van ervaring in een soortgelijke functie en branche is een prÂ¨Â¦;</li>
+									<li>stressbestendigheid;</li>
+									<li>het hebben van een flexibele instelling.</li>
+								</ul>
+								<h4>Wat vragen wij:</h4>
+								<ul>
+								<li>een opleiding op MBO E/WTB niveau (of soortgelijke ervaring);</li>
+								<li>VCA;</li>
+								<li>rijbewijs B-E;</li>
+								<li>bereidheid tot het lopen van consignatiedienst.</li>
+								</ul>
+								<h4>Wat bieden wij:</h4>
+								<ul>
+									<li>goede opleiding- en doorgroeimogelijkheden binnen het bedrijf;</li>
+									<li>grote mate van zelfstandig- en verantwoordelijkheid;</li>
+									<li>een hecht team van professionele collag's die op een informele manier samenwerken;</li>
+									<li>prima salaris en secundaire arbeidsvoorwaarden.</li>
+								</ul>
+								<a class="button close">Sluiten</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- / content -->
