@@ -1,18 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html>
 
 <head>
 	<title>Search results - Facta</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
 </head>
 
 <body>
 	<!-- header -->
-	<div id="header" class="global-width">
+	<header id="header" class="global-width">
 		<!-- logo -->
 		<div class="logo">
 			<a href="index.html">
@@ -24,13 +24,13 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<div class="search">
 			<span class="search-tri"></span>
 			<form class="search-form" method="post" action="Search results.html">
-				<input type="text" id="search-text" placeholder="ZOEKEN" />
+				<input type="search" id="search-text" placeholder="ZOEKEN" />
 				<button type="submit" id="search-button">Search</button>
 			</form>
 		</div>
 		<!-- / search -->
 		<!-- nav -->
-		<div class="nav">
+		<nav class="nav">
 			<span class="nav-tri"></span>
 			<ul>
 				<li><a href="Content Page.html">OVER FACTA</a></li>
@@ -40,9 +40,9 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				<li><a href="Contact.html">CONTACT</a></li>
 				<li><a href="Login.html">LOG-IN</a></li>
 			</ul>
-		</div>
+		</nav>
 		<!-- / nav -->
-	</div>
+	</header>
 	<!-- / header -->
 	<!-- middle -->
 	<div id="middle">
@@ -67,7 +67,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			</div>
 			<!-- / back -->
 			<!-- sidebar -->
-			<div class="sidebar">
+			<aside class="sidebar">
 				<div class="block block-menu">
 					<h1 class="title">ACTIVITEITEN</h1>
 					<ul>
@@ -88,34 +88,34 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 						</li>
 					</ul>
 				</div>
-			</div>
+			</aside>
 			<!-- / sidebar -->
 			<!-- content -->
-			<div class="content">
+			<article class="content">
 				<div class="block block-result">
 					<h1 class="title">ZOEK<span>RESULTATEN</span></h1>
 					<h3 class="result-title">U heeft gezocht op:<span> zoekterm</span></h3>
-					<div class="item">
+					<section class="item">
 						<h2 class="item-title">Unto te dusapid quam atemqui to con.</h2>
 						<p>Restem quo occatae volore, ad que volendi taspeccatae volore, ad que volendi taspedigent ccatae volore, ad que volendi taspe ...</p>
 						<a href="#" class="button button-result">Bekijken</a>
-					</div>
-					<div class="item">
+					</section>
+					<section class="item">
 						<h2 class="item-title">Unto te dusapid quam atemqui to con.</h2>
 						<p>Restem quo occatae volore, ad que volendi taspeccatae volore, ad que volendi taspedigent ccatae volore, ad que volendi taspe ...</p>
 						<a href="#" class="button button-result">Bekijken</a>
-					</div>
-					<div class="item">
+					</section>
+					<section class="item">
 						<h2 class="item-title">Unto te dusapid quam atemqui to con.</h2>
 						<p>Restem quo occatae volore, ad que volendi taspeccatae volore, ad que volendi taspedigent ccatae volore, ad que volendi taspe ...</p>
 						<a href="#" class="button button-result">Bekijken</a>
-					</div>
-					<div class="item">
+					</section>
+					<section class="item">
 						<h2 class="item-title">Unto te dusapid quam atemqui to con.</h2>
 						<p>Restem quo occatae volore, ad que volendi taspeccatae volore, ad que volendi taspedigent ccatae volore, ad que volendi taspe ...</p>
 						<a href="#" class="button button-result">Bekijken</a>
-					</div>
-					<div class="pagination">
+					</section>
+					<nav class="pagination">
 						<a class="pagination-button first disabled" href="#"></a>
 						<a class="pagination-button previous disabled" href="#"></a>
 						<a class="pagination-num current" href="#">1</a><span>|</span>
@@ -124,17 +124,17 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 						<a class="pagination-num" href="#">4</a>
 						<a class="pagination-button next" href="#"></a>
 						<a class="pagination-button last" href="#"></a>
-					</div>
+					</nav>
 				</div>
-			</div>
+			</article>
 			<!-- / content -->
 		</div>
 	</div>
 	<!-- / main -->
 	<!-- footer -->
-	<div id="footer">
+	<footer id="footer">
 		<div class="global-width clearfix">
-			<div class="widget-box">
+			<section class="widget-box">
 				<h3 class="title">Producten</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -144,8 +144,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">Facta</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -155,8 +155,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">Contact</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -166,8 +166,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">sitemap</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -177,8 +177,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">Overig</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -188,9 +188,9 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
+			</section>
 		</div>
-	</div>
+	</footer>
 	<!-- / footer -->
 </body>
 

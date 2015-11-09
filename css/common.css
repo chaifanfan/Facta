@@ -28,9 +28,9 @@
 	width: 365px;
 	height: 67px;
 }
-.logo img{/*IE7*/
+/*.logo img{/*IE7* /
 	border:none;
-}
+}*/
 /************************************ /logo************************************/
 
 
@@ -38,6 +38,7 @@
 
 .search {
 	margin:14px 0 6px;
+	width: 229px;/*ie*/
 	float: right;
 }
 .search-tri{
@@ -49,9 +50,9 @@
 	background:url(images/sprite.png) no-repeat 0 -246px;
 }
 #search-text {
-	padding-left: 52px;
+	padding-left: 51px;
 	float: left;
-	width: 147px;
+	width: 199px;
 	height: 26px;
 	border: 0;
 	background: url(images/sprite.png) no-repeat -38px -132px;
@@ -128,6 +129,7 @@
 #middle {
 	/*height:277px;*/
 	background: url(images/middle.jpg) 0 0 repeat-x;
+	line-height: 0;/*ie9+ ff chrome*/
 }
 #middle .global-width{
 	position: relative;
@@ -327,6 +329,7 @@
 .passage .fancybox{
 	float:right;
 	margin-left: 22px;
+	line-height: 0;/**/
 }
 .passage .spe{
 	margin-top:-8px;
@@ -358,7 +361,10 @@
 .login-form input[type="text"],
 .login-form input[type="password"],
 .contact-form input[type="text"],
-.contact-form input[type="password"]{
+.contact-form input[type="password"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form input[type="url"]{
 	padding:0 2px;
 	width:273px;
 	height:26px;

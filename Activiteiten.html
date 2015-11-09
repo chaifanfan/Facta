@@ -1,17 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html>
 
 <head>
 	<title>Activiteiten - Facta</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-	<link rel="stylesheet" href="css/js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
-	<script type="text/javascript">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+	<link rel="stylesheet" href="css/js/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<script src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script>
 		$(document).ready(function() {
 			$(".fancybox").fancybox();
 		});
@@ -20,7 +20,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <body>
 	<!-- header -->
-	<div id="header" class="global-width">
+	<header id="header" class="global-width">
 		<!-- logo -->
 		<div class="logo">
 			<a href="index.html">
@@ -32,13 +32,13 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<div class="search">
 			<span class="search-tri"></span>
 			<form class="search-form" method="post" action="Search results.html">
-				<input type="text" id="search-text" placeholder="ZOEKEN" />
+				<input type="search" id="search-text" placeholder="ZOEKEN" />
 				<button type="submit" id="search-button">Search</button>
 			</form>
 		</div>
 		<!-- / search -->
 		<!-- nav -->
-		<div class="nav">
+		<nav class="nav">
 			<span class="nav-tri"></span>
 			<ul>
 				<li><a href="Content Page.html">OVER FACTA</a></li>
@@ -48,16 +48,16 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				<li><a href="Contact.html">CONTACT</a></li>
 				<li><a href="Login.html">LOG-IN</a></li>
 			</ul>
-		</div>
+		</nav>
 		<!-- / nav -->
-	</div>
+	</header>
 	<!-- / header -->
 	<!-- middle -->
 	<div id="middle">
 		<div class="global-width">
 			<span class="mask left"></span>
 			<span class="mask right"></span>
-			<img class="pic" src="upload/pic2.jpg" />
+			<img class="pic" src="upload/pic.png" />
 		</div>
 	</div>
 	<!-- / middle -->
@@ -77,7 +77,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			</div>
 			<!-- / back -->
 			<!-- sidebar -->
-			<div class="sidebar">
+			<aside class="sidebar">
 				<div class="block block-menu">
 					<h1 class="title">ACTIVITEITEN</h1>
 					<ul class="act">
@@ -106,10 +106,10 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 						</li>
 					</ul>
 				</div>
-			</div>
+			</aside>
 			<!-- / sidebar -->
 			<!-- content -->
-			<div class="content">
+			<article class="content">
 				<div class="block block-content">
 					<h1 class="title">NIEUW<span>BOUW</span></h1>
 					<div class="passage">
@@ -119,15 +119,15 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 						</p>
 					</div>
 				</div>
-			</div>
+			</article>
 			<!-- / content -->
 		</div>
 	</div>
 	<!-- / main -->
 	<!-- footer -->
-	<div id="footer">
+	<footer id="footer">
 		<div class="global-width clearfix">
-			<div class="widget-box">
+			<section class="widget-box">
 				<h3 class="title">Producten</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -137,8 +137,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">Facta</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -148,8 +148,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">Contact</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -159,8 +159,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">sitemap</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -170,8 +170,8 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
-			<div class="widget-box">
+			</section>
+			<section class="widget-box">
 				<h3 class="title">Overig</h3>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
@@ -181,9 +181,9 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<li><a href="#">Aenean egestas luctus dui</a></li>
 					<li><a href="#">Proin eget ante in nisl</a></li>
 				</ul>
-			</div>
+			</section>
 		</div>
-	</div>
+	</footer>
 	<!-- / footer -->
 </body>
 
